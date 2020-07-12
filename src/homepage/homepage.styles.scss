@@ -1,0 +1,38 @@
+@mixin flex($direction: row) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+.homepage-container {
+  background-color: #eee;
+  min-height: 100vh;
+  @include flex();
+}
+
+.homepage {
+  @include flex();
+  flex-wrap: wrap;
+  width: 90%;
+
+  &__menu {
+    height: 250px;
+    width: 30%;
+    border: 1px solid black;
+    flex-grow: 1;
+    margin: 10px;
+    @include flex();
+  }
+
+  &__content {
+    height: 90px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    @include flex(column);
+
+    &__title {
+      font-weight: 500;
+    }
+  }
+}
