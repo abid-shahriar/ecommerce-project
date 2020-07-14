@@ -1,0 +1,26 @@
+.collection-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 350px;
+  width: 22%;
+
+  .image {
+    height: 95%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+  }
+
+  .collection-footer {
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
